@@ -1,9 +1,10 @@
 
 const Navbar = () => {
   return (
-    <div>
-      
-    </div>
+    <nav>
+      <img src="/logo.svg" alt="App Logo" />
+      <h1>App Name</h1>
+    </nav>
   )
 }
 

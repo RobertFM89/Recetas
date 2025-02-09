@@ -3,16 +3,25 @@ import './App.css'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import About from './pages/About'
+import NotFound from './pages/NotFound'
 
 function App() {
   
 
   return (
-    <>
+    <Router>
       <Navbar />
       <Sidebar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   )
 }
 
