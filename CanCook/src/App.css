@@ -334,3 +334,11 @@ form button:hover {
   background-color: rgb(235, 119, 11);
   margin: 10px;
 }
+
+.item-details-text {
+  display: flex;
+  flex-direction: column;
+  width: 50vh;
+  justify-content: center;
+  align-items: center;
+}

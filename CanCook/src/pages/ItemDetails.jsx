@@ -37,11 +37,13 @@ const ItemDetails = () => {
       <div className='item-details-info'>
         <h2>{item.name}</h2>
         <img src={item.image} alt={item.name} width="300" />
+        <div className="item-details-text">
         <p>Ingredients: {item.ingredients}</p>
         <p>Instructions: {item.instructions}</p>
         <p>Calories: {item.calories}</p>
         <p>Servings: {item.servings}</p>
         <p>Status: {item.isCompleted ? '✔️' : '❌'}</p>
+        </div>
         <Button onClick={handleShowUpdateForm} className="button">Update</Button>
         <Button onClick={handleBackToDashboard} className="button">Go Back</Button>
       </div>
