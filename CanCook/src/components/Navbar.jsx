@@ -1,9 +1,15 @@
+import React from 'react'
+import Logo from '../assets/logo.jpg'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <nav>
-      <img src="/logo.svg" alt="App Logo" />
-      <h1>App Name</h1>
+      <Link to="/">
+       <img src={Logo} alt="App Logo" />
+      </Link>
+     
+      <h1>CanCook</h1>
     </nav>
   )
 }

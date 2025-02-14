@@ -1,10 +1,8 @@
-
+import React from 'react'
 const Footer = () => {
   return (
     <footer>
-    <a href="https://github.com/your-repo-link" target="_blank" rel="noopener noreferrer">
-      GitHub Repository
-    </a>
+    <p>Footer</p>
   </footer>
   )
 }
