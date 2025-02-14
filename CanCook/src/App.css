@@ -194,7 +194,7 @@ form button:hover {
 
 .dashboard-div {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
@@ -206,3 +206,27 @@ form button:hover {
   justify-content: top, center;
   width: 50%;
 }
+
+.sort-dropdown {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  justify-self: center;
+}
+
+.sort-dropdown:hover {
+  background-color: #555;
+}
+
+.dashboard-sort-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: top;
+  align-items: center;
+}
+
