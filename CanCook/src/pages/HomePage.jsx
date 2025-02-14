@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import Button from '../components/Button'
 
 
 export default function HomePage() {
@@ -8,9 +9,8 @@ export default function HomePage() {
         navigate('/dashboard')
     }
   return (
-    <div>
-      <h2>Welcome to the Home Page</h2>
-        <button onClick={handleButtonClick}>See the recipes!</button>
+    <div className='home-page'>
+        <Button onClick={handleButtonClick} className={'button'}>See the recipes!</Button>
     </div>
   )
 }

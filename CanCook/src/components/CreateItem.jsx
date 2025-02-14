@@ -1,11 +1,14 @@
 
 import React, { useState } from 'react'
+import Button from './Button'
 
 const CreateItem = ({onAddItem}) => {
 
     const [name, setName] = useState('')
     const [calories, setCalories] = useState('')
-    const [image, setImage] = useState('')
+    const [image, setImage] = useState(null)
+    const [ingredients, setIngredients] = useState('')
+    const [instructions, setInstructions] = useState('')
     const [servings, setServings] = useState('')
     const [isCompleted, setIsCompleted] = useState(false)
 
@@ -15,18 +18,26 @@ const CreateItem = ({onAddItem}) => {
             id: Date.now().toString(),
             name,
             calories: parseInt(calories),
-            image,
+            ingredients,
+            instructions,
+            image: URL.createObjectURL(image),
             servings: parseInt(servings),
             isCompleted
         }
         onAddItem(newItem)
         setName('')
         setCalories('')
-        setImage('')
+        setIngredients('')
+        setInstructions('')
+        setImage(null)
         setServings('')
         setIsCompleted(false)
-
     }
+
+    const handleImageChange = (e) => {
+        setImage(e.target.files[0])
+      }
+
   return (
     <form onSubmit={handleSubmit} className="create-form">
         <h3>Create a new recipe</h3>
@@ -35,22 +46,31 @@ const CreateItem = ({onAddItem}) => {
             <input type="text" value={name} onChange={(e) => setName(e.target.value)} required/>
         </label>
         <label>
+            Ingredients:
+            <input type="text" value={ingredients} onChange={(e) => setIngredients(e.target.value)} required/>
+        </label>
+        <label>
+            Instructions:
+            <input type="text" value={instructions} onChange={(e) => setInstructions(e.target.value)} required/>
+        </label>
+        <label>
             Calories:
             <input type="number" value={calories} onChange={(e) => setCalories(e.target.value)} required/>
         </label>
-        <label>
-            Image URL:
-            <input type="text" value={image} onChange={(e) => setImage(e.target.value)} />
-        </label>
+        
         <label>
             Servings:
             <input type="number" value={servings} onChange={(e) => setServings(e.target.value)} />
         </label>
         <label>
+            Image:
+            <input type="file" onChange={handleImageChange} />
+        </label>
+        <label>
             Completed:
             <input type="checkbox" checked={isCompleted} onChange={(e) => setIsCompleted(e.target.value)} />
         </label>
-        <button type="submit" className="submit-btn">Add Recipe</button>
+        <Button type="submit" className="button">Add Recipe</Button>
       
     </form>
   )

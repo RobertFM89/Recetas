@@ -1,4 +1,10 @@
 /* General styles */
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 body, html {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,12 +12,11 @@ body, html {
   height: 100%;
   width: 100%;
 }
-
-#root {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+h2 {
+  color: rgb(235, 119, 11);
+  border: #0e0b0b;
 }
+
 
 .App {
   display: flex;
@@ -31,7 +36,7 @@ nav {
 }
 
 nav img {
-  height: 40px;
+  height: 60px;
   margin-right: 1rem;
 }
 
@@ -44,8 +49,8 @@ nav h1 {
 aside {
   background-color: #f4f4f4;
   padding: 1rem;
-  width: 200px;
-  position: fixed;
+  width: 150px;
+  
   top: 0;
   left: 0;
   height: 100%;
@@ -67,20 +72,22 @@ aside ul li a {
 }
 
 /* Footer styles */
-footer {
+.footer {
   background-color: #333;
-  color: white;
-  text-align: center;
+  color: rgb(235, 119, 11);
+  text-align: right;
   padding: 1rem;
-  position: fixed;
   bottom: 0;
   width: 100%;
+  opacity: 0.2;
+  height: 15px;
+  position: fixed;
   
 }
 
 /* Main content styles */
 main {
-  margin-left: 220px;
+  margin-left: 200px;
   padding: 1rem;
   flex: 1;
   overflow-y: auto;
@@ -108,6 +115,8 @@ li {
 img {
   display: block;
   margin: 0.5rem 0;
+  border-style: solid;
+  border-radius: 20px;
 }
 
 /* Form styles */
@@ -135,7 +144,7 @@ form input[type="checkbox"] {
 
 form button {
   padding: 0.5rem 1rem;
-  background-color: #333;
+  background-color: #2e1717;
   color: white;
   border: none;
   cursor: pointer;
@@ -192,6 +201,11 @@ form button:hover {
   color: #fff;
 }
 
+.dashboard {
+  background-color: rgb(36, 33, 29);
+}
+
+
 .dashboard-div {
   display: flex;
   flex-direction: row;
@@ -216,10 +230,11 @@ form button:hover {
   cursor: pointer;
   width: 50%;
   justify-self: center;
+  border-radius: 4px;
 }
 
 .sort-dropdown:hover {
-  background-color: #555;
+  background-color: rgb(235, 119, 11);
 }
 
 .dashboard-sort-form {
@@ -230,3 +245,92 @@ form button:hover {
   align-items: center;
 }
 
+.list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center ;
+  border-style: solid;
+  border-radius: 25px;
+  width: 100%;
+  background-image: url(../public/4.jpeg);
+   ;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.item-details-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vh;
+  background-image: url(../public/1.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60vh;
+  background-blend-mode: color-burn;
+}
+
+.update-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top, center;
+  width: 30%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(235, 119, 11);
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-image: url(../public/0698a055-e0ab-4d01-9fd4-106bcde979c8.jpg);
+  background-size: contain;
+  background-position: center;
+  background-color: #fffcfc;
+  background-repeat: no-repeat;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.about-container h2 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.about-container p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.button {
+  background-color: rgb(235, 119, 11);
+  margin: 10px;
+}

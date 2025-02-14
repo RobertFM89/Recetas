@@ -47,8 +47,8 @@ const Dashboard = () => {
   }
 
   return (
-    <main>
-      <h2>Dashboard</h2>
+    <main className='dashboard'>
+      
       <div className='dashboard-div'>
         <List items={items} onDelete={handleDelete} />
         <div className='dashboard-sort-form'>

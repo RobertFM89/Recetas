@@ -4,6 +4,8 @@
       "name": "Pizza",
       "calories": 400,
       "image": "https://i.imgur.com/eTmWoAN.png",
+      "ingredients":"dough, cheese, tomato sauce, pepperoni",
+      "instructions": "Bake at 400 degrees for 20 minutes. Let cool before slicing. Enjoy!",
       "servings": 1,
       "isCompleted": true
     },
@@ -12,6 +14,8 @@
       "name": "Salad",
       "calories": 150,
       "image": "https://i.imgur.com/DupGBz5.jpg",
+      "ingredients": "lettuce,tomato, cucumber, olive oil",
+      "instructions": "Chop vegetables and toss with olive oil. Add salt and pepper to taste. Enjoy!",
       "servings": 1,
         "isCompleted": true
     },
@@ -20,6 +24,8 @@
       "name": "Sweet Potato",
       "calories": 120,
       "image": "https://i.imgur.com/hGraGyR.jpg",
+      "ingredients": "sweet potato, butter, salt, pepper",
+      "instructions": "Bake at 350 degrees for 45 minutes. Serve with butter, salt, and pepper. Enjoy!",
       "servings": 1,
         "isCompleted": false
     },
@@ -28,6 +34,8 @@
       "name": "Gnocchi",
       "calories": 500,
       "image": "https://i.imgur.com/93ekwW0.jpg",
+      "ingredients": "potato, flour, egg, salt",
+      "instructions": "Boil water. Add gnocchi and cook until they float. Drain and serve with sauce. Enjoy!",
       "servings": 1,
         "isCompleted": true
     },
@@ -36,6 +44,8 @@
       "name": "Pot Roast",
       "calories": 350,
       "image": "https://i.imgur.com/WCzJDWz.jpg",
+      "ingredients": "beef, vegetables, salt, pepper",
+      "instructions": "Season beef and sear in a pan. Add vegetables and cook in oven for 2 hours. Enjoy!",
       "servings": 1,
         "isCompleted": false
     },
@@ -44,6 +54,8 @@
       "name": "Lasagna",
       "calories": 750,
       "image": "https://i.imgur.com/ClxOafl.jpg",
+      "ingredients": "pasta, cheese, meat, tomato sauce",
+      "instructions": "Layer pasta, cheese, meat, and sauce. Bake at 350 degrees for 45 minutes. Enjoy!",
       "servings": 1,
         "isCompleted": false
     },
@@ -52,6 +64,8 @@
       "name": "Hamburger",
       "calories": 400,
       "image": "https://i.imgur.com/LoG39wK.jpg",
+      "ingredients": "beef, bun, lettuce, tomato",
+      "instructions": "Grill beef patty and assemble with bun, lettuce, and tomato. Enjoy!",
       "servings": 1,
         "isCompleted": true
     },
@@ -60,14 +74,8 @@
       "name": "Pad Thai",
       "calories": 475,
       "image": "https://i.imgur.com/5ktcSzF.jpg",
-      "servings": 1,
-        "isCompleted": false
-    },
-    {
-      "id": "d087343e-9a92-48c7-8b27-43e37491b6f5",   
-      "name": "Almonds",
-      "calories": 75,
-      "image": "https://i.imgur.com/JRp4Ksx.jpg",
+      "ingredients": "noodles, chicken, peanuts, vegetables",
+      "instructions": "Cook noodles and chicken in a pan. Add vegetables and peanuts. Enjoy!",
       "servings": 1,
         "isCompleted": false
     },
@@ -76,6 +84,8 @@
       "name": "Sarma",
       "calories": 200,
       "image": "https://i.imgur.com/yOlf4Fj.jpg",
+      "ingredients": "cabbage, rice, meat, tomato sauce",
+      "instructions": "Roll cabbage leaves with rice, meat, and sauce. Bake at 350 degrees for 45 minutes. Enjoy!",
       "servings": 1,
         "isCompleted": true
     },
@@ -84,6 +94,8 @@
       "name": "Bacon",
       "calories": 175,
       "image": "https://i.imgur.com/7GlqDsG.jpg",
+      "ingredients": "bacon",
+      "instructions": "Fry bacon in a pan until crispy. Enjoy!",
       "servings": 1,
         "isCompleted": false
     },
@@ -92,6 +104,8 @@
       "name": "Hot Dog",
       "calories": 275,
       "image": "https://i.imgur.com/QqVHdRu.jpg",
+      "ingredients": "hot dog, bun, ketchup, mustard",
+      "instructions": "Grill hot dog and assemble with bun, ketchup, and mustard. Enjoy!",
       "servings": 1,
         "isCompleted": true
     },
@@ -100,6 +114,8 @@
       "name": "Chocolate Cake",
       "calories": 490,
       "image": "https://i.imgur.com/yrgzA9x.jpg",
+      "ingredients": "flour, sugar, cocoa, eggs",
+      "instructions": "Mix ingredients and bake at 350 degrees for 30 minutes. Let cool before slicing. Enjoy!",
       "servings": 1,
         "isCompleted": false
     },
@@ -108,31 +124,9 @@
       "name": "Wheat Bread",
       "calories": 175,
       "image": "https://i.imgur.com/TsWzMfM.jpg",
+      "ingredients": "wheat flour, yeast, salt, water",
+      "instructions": "Mix ingredients and bake at 350 degrees for 30 minutes. Let cool before slicing. Enjoy!",
       "servings": 1,
         "isCompleted": true
-    },
-    {
-      "id": "d7a8f0c1-0a34-4e3b-a2d3-3c3e3f11eb19",
-      "name": "Orange",
-      "calories": 85,
-      "image": "https://i.imgur.com/abKGOcv.jpg",
-      "servings": 1,
-        "isCompleted": false
-    },
-    {
-      "id": "a8d111c4-50ef-4c61-8b16-17e84a86b2f4",
-      "name": "Banana",
-      "calories": 175,
-      "image": "https://i.imgur.com/BMdJhu5.jpg",
-      "servings": 1,
-        "isCompleted": true
-    },
-    {
-      "id": "62d8a0bc-1b77-4389-9e7b-2e00cace6a2e",
-      "name": "Yogurt",
-      "calories": 125,
-      "image": "https://i.imgur.com/URhdrAm.png",
-      "servings": 1,
-        "isCompleted": false
     }
   ]
